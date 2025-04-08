@@ -12,13 +12,26 @@ const RepositoryStats = (props) => {
                 <StyledText align="center">{ParseThousands(props.stargazersCount)}</StyledText>
                 <StyledText align="center" fontWeight={"bold"}>Stars</StyledText>
             </View>
+            <View>
+                <StyledText align="center">{ParseThousands(props.stargazersCount)}</StyledText>
+                <StyledText align="center" fontWeight={"bold"}>Forks</StyledText>
+            </View>
+            <View>
+                <StyledText align="center">{ParseThousands(props.stargazersCount)}</StyledText>
+                <StyledText align="center" fontWeight={"bold"}>Review</StyledText>
+            </View>
+            
+            <View>
+                <StyledText align="center">{ParseThousands(props.stargazersCount)}</StyledText>
+                <StyledText align="center" fontWeight={"bold"}>Rating</StyledText>
+            </View>            
         </View>
     )
 }
 
 const styles = StyleSheet.create({
     container : {
-         flexDirection: "row", 
+         flexDirection: "row",
          justifyContent: "space-around"
         }
     })

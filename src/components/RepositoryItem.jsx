@@ -9,8 +9,8 @@ const RepositoryItemHeader = ({ ownerAvatarUrl, name, description, language }) =
             <Image style={styles.image} source={{uri: ownerAvatarUrl}}/>
         </View>
         <View style={{ flex: 1 }}>
-            <StyledText fontSize={"subheading"} fontWeight={"bold"}>name: {name}</StyledText>
-            <StyledText>{description}</StyledText>
+            <StyledText fontWeight="bold">name: {name}</StyledText>
+            <StyledText color="secondary">{description}</StyledText>
             <StyledText style={styles.language}>{language}</StyledText>
         </View>
     </View>
@@ -35,6 +35,8 @@ const styles = StyleSheet.create({
     },
     language: {
         padding: 4,
+        marginTop: 4,
+        marginBottom: 4,
         color: theme.colors.white,
         backgroundColor: theme.colors.primary,
         alignSelf: "flex-start",

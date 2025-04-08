@@ -10,7 +10,7 @@ const repositories = [{
     ownerAvatarUrl: "https://avatars.githubusercontent.com/u/1?v=4"
 }]
 
-const Repositorylist = () => {
+const RepositoryList = () => {
     return (
         <FlatList
         data={repositories}
@@ -22,4 +22,4 @@ const Repositorylist = () => {
     )
 }
 
-export default Repositorylist;
+export default RepositoryList;
