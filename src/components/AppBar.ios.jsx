@@ -37,7 +37,7 @@ const AppBar = () => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: theme.appBar.primary,
+    backgroundColor: "blue",
     flexDirection: "row",
     paddingTop: Constants.statusBarHeight + 10,
     paddingLeft: 10,
